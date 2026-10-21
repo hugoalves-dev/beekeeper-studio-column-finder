@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Column Finder</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="heading">
+        <div>
+          <span class="eyebrow">BEEKEEPER STUDIO PLUGIN</span>
+          <h1>Column Finder</h1>
+          <p class="subhead">Encontre colunas em todas as tabelas e views, sem abrir cada entidade.</p>
+        </div>
+        <span class="connection" id="connection">Conectando...</span>
+      </header>
+
+      <section class="search-panel" aria-label="Pesquisar colunas">
+        <label for="search">Nome da coluna</label>
+        <div class="search-row">
+          <input id="search" type="search" placeholder="Ex.: gcrGuiaCodigo" autocomplete="off" spellcheck="false" maxlength="120" autofocus />
+          <button id="refresh" type="button" title="Repetir busca" aria-label="Atualizar resultados">Atualizar</button>
+        </div>
+        <p id="status" class="status" role="status">Digite parte do nome de uma coluna para pesquisar.</p>
+      </section>
+
+      <section class="results" aria-label="Resultados da busca">
+        <div class="results-heading"><h2>Resultados</h2><span id="total">0</span></div>
+        <div class="table-scroll">
+          <table>
+            <thead><tr><th>Schema</th><th>Tabela / View</th><th>Coluna</th><th>Tipo</th><th></th></tr></thead>
+            <tbody id="rows"><tr><td class="empty" colspan="5">Digite o nome de uma coluna para começar.</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+      <footer>Somente leitura · PostgreSQL / MySQL / MariaDB · Até 500 resultados por pesquisa</footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

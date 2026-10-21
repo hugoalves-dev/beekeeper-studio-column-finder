@@ -1,0 +1,20 @@
+{
+  "name": "beekeeper-column-finder",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@beekeeperstudio/plugin": "1.7.2"
+  },
+  "devDependencies": {
+    "@beekeeperstudio/vite-plugin": "1.1.0",
+    "typescript": "5.8.3",
+    "vite": "7.3.7"
+  }
+}

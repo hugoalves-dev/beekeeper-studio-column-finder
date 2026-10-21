@@ -1,0 +1,31 @@
+{
+  "id": "beekeeper-column-finder",
+  "name": "Column Finder",
+  "version": "0.2.0",
+  "minAppVersion": "5.4.0",
+  "manifestVersion": 2,
+  "description": "Find columns across every table and view in the active database. Read-only schema search.",
+  "author": {
+    "name": "Vitor Hugo",
+    "url": "https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder"
+  },
+  "icon": "search",
+  "capabilities": {
+    "views": [
+      {
+        "id": "column-finder-view",
+        "name": "Column Finder",
+        "type": "shell-tab",
+        "entry": "dist/index.html"
+      }
+    ],
+    "menu": [
+      {
+        "command": "new-column-finder",
+        "name": "Column Finder",
+        "view": "column-finder-view",
+        "placement": "newTabDropdown"
+      }
+    ]
+  }
+}
