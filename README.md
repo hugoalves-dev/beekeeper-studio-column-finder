@@ -1,6 +1,6 @@
 # Beekeeper Studio Column Finder
 
-[![CI](https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder/actions/workflows/ci.yml/badge.svg)](https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder/actions/workflows/ci.yml)
+[![CI](https://github.com/hugoalves-dev/beekeeper-studio-column-finder/actions/workflows/ci.yml/badge.svg)](https://github.com/hugoalves-dev/beekeeper-studio-column-finder/actions/workflows/ci.yml)
 
 A read-only Beekeeper Studio plugin to find columns across all tables and views in the active database.
 
@@ -10,7 +10,7 @@ Supports **PostgreSQL, MySQL and MariaDB**. Partial, case-insensitive searches s
 
 ## Install from CI artifact (no Node required)
 
-1. Open [Actions → CI](https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder/actions/workflows/ci.yml) and download the **beekeeper-column-finder** artifact from a successful run.
+1. Open [Actions → CI](https://github.com/hugoalves-dev/beekeeper-studio-column-finder/actions/workflows/ci.yml) and download the **beekeeper-column-finder** artifact from a successful run.
 2. Extract its **manifest.json** and **dist/** directory into a folder named **beekeeper-column-finder** in the Beekeeper plugins directory:
    - Windows: %APPDATA%\beekeeper-studio\plugins\beekeeper-column-finder
    - Linux: ~/.config/beekeeper-studio/plugins/beekeeper-column-finder
@@ -27,7 +27,7 @@ CI builds on **Windows and Ubuntu with Node.js 22**, runs unit tests, then uploa
 Run these commands in PowerShell:
 
 ~~~powershell
-git clone https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder.git
+git clone https://github.com/hugoalves-dev/beekeeper-studio-column-finder.git
 cd beekeeper-studio-column-finder
 npm install
 npm test

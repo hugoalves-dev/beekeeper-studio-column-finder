@@ -7,7 +7,7 @@
   "description": "Find columns across every table and view in the active database. Read-only schema search.",
   "author": {
     "name": "Vitor Hugo",
-    "url": "https://github.com/vitorhugo-dotnet/beekeeper-studio-column-finder"
+    "url": "https://github.com/hugoalves-dev/beekeeper-studio-column-finder"
   },
   "icon": "search",
   "capabilities": {
